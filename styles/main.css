@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Yekan', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  height: 100vh;
+  font-size: 1.6rem;
+  direction: rtl;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('bg.jpg') center center/cover no-repeat;
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 120rem;
+  min-height: 60%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+  padding: 7.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+  .container {
+    display: block;
+    padding: 2rem;
+    height: auto;
+    width: 90%;
+    overflow-y: scroll;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+}
+
+header {
+  /* flex: 1; */
+  flex-basis: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+.form-box {
+  /* flex: 1; */
+  flex-basis: 50rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #34626c;
+}
+
+p {
+  color: #839b97;
+}
+
+.field-container {
+  width: 100%;
+  display: flex;
+}
+
+input {
+  flex: 1;
+  font-family: 'Yekan', sans-serif;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  border: 1px solid #34626c;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='tel'] {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+input[type='submit'] {
+  width: 100%;
+  background-color: #839b97;
+  color: #fff;
+  font-size: 1.7rem;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+  background-color: #34626c;
+}
+
+input::placeholder {
+  color: #839b97;
+  opacity: 0.7;
+}
+
+label {
+  display: none;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  opacity: 0.7;
+}
+
+.telegram label {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #34626c;
+  font-size: 1.7rem;
+}
+
+.heading {
+  padding: 2rem;
+}

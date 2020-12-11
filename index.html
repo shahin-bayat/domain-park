@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="heading">
+          <h1>این دامنه به فروش می‌رسد</h1>
+          <p>در صورت تمایل به خرید این دامنه فرم مقابل را پر کنید و یا از طریق 
+            <a href="https://t.me/ramses777">
+            تلگرام
+          </a> تماس بگیرید.</p>
+        </div>
+        <!-- <div class="telegram">
+          <a href="https://t.me/ramses777">
+            <img src="styles/telegram.png" alt="telegram" id="telegram-contact">
+          </a>
+        </div> -->
+      </header>
+      <div class="form-box">
+        <form action="https://formspree.io/f/xdopwdbb" method="POST" >
+          <div class="field-container">
+            <label for="name">نام و نام خانوادگی</label>
+            <input type="text" name="name" id="name" placeholder="نام و نام خانوادگی" required>
+          </div>
+          <div class="field-container">
+            <label for="email">پست الکترونیکی</label>
+            <input type="email" name="email" id="email" placeholder="پست الکترونیکی" required>
+          </div>
+          <div class="field-container">
+            <label for="telephone">مویابل یا تلفن<span>در صورت تمایل</span></label>
+            <input type="tel" name="telephone" id="telephone" placeholder="مویابل یا تلفن">
+          </div>
+          <div class="field-container">
+            <label for="price">قیمت پیشنهادی</label>
+            <input type="text" name="price" id="price" placeholder="قیمت پیشنهادی" required>
+          </div>
+          <input type="submit" value="ارسال">
+        </form>
+      </div>
+    </div>
+    </body>
+  </div>
+</html>
